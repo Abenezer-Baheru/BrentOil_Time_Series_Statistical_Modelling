@@ -1,5 +1,3 @@
-Sure! Here is the complete `README.md` file for your project:
-
 ### README.md
 
 ```markdown
@@ -11,18 +9,23 @@ This project involves the exploration and preprocessing of Brent Oil prices time
 
 ```
 BrentOil_Time_Series_Statistical_Modelling/
-├── data/
-│   ├── BrentOilPrices.csv
-│   ├── BrentOilPrices_cleaned.csv
+├── src/
+│   ├── data/
+│   │   ├── BrentOilPrices.csv
+│   │   ├── BrentOilPrices_cleaned.csv
 ├── scripts/
 │   ├── EDA_and_Preprocessing.py
-│   └── test_EDA_and_Preprocessing.py
+│   ├── test_EDA_and_Preprocessing.py
+│   ├── __init__.py
 ├── tests/
 │   ├── test_EDA_and_Preprocessing.py
-│   └──__init__
+│   ├── __init__.py
 ├── notebooks/
-│   └── EDA_and_Preprocessing.ipynb
-└── README.md
+│   ├── EDA_and_Preprocessing.ipynb
+│   ├── __init__.py
+├── .gitignore
+├── requirements.txt
+├── README.md
 ```
 
 ## Getting Started
@@ -60,7 +63,7 @@ cd BrentOil_Time_Series_Statistical_Modelling
 cd BrentOil_Time_Series_Statistical_Modelling
 ```
 
-3. Ensure the data files (`BrentOilPrices.csv`) are located in the `data` directory.
+3. Ensure the data files (`BrentOilPrices.csv`) are located in the `src/data` directory.
 
 ## Usage
 
@@ -77,26 +80,26 @@ jupyter notebook notebooks/EDA_and_Preprocessing.ipynb
 
 ### Testing
 
-Unit tests for the `EDA_and_Preprocessing` class are provided in the `test_EDA_and_Preprocessing.py` script. To run the tests:
+Unit tests for the `EDA_and_Preprocessing` class are provided in the `test_EDA_and_Preprocessing.py` script in the `tests` directory. To run the tests:
 
 ```bash
-python scripts/test_EDA_and_Preprocessing.py
+python -m unittest discover tests
 ```
 
 ## Project Files
 
-- `data/BrentOilPrices.csv`: The raw dataset containing Brent Oil prices.
-- `data/BrentOilPrices_cleaned.csv`: The cleaned dataset after preprocessing.
+- `src/data/BrentOilPrices.csv`: The raw dataset containing Brent Oil prices.
+- `src/data/BrentOilPrices_cleaned.csv`: The cleaned dataset after preprocessing.
 - `scripts/EDA_and_Preprocessing.py`: The script containing the `EDA_and_Preprocessing` class.
+- `tests/test_EDA_and_Preprocessing.py`: The script containing unit tests for the `EDA_and_Preprocessing` class.
 - `notebooks/EDA_and_Preprocessing.ipynb`: The Jupyter notebook for EDA and preprocessing.
 - `README.md`: The project documentation.
 
-## Authors
+## Author
 
-- **Your Name** - [Abenezer B.](https://github.com/Abenezer-Baheru/BrentOil_Time_Series_Statistical_Modelling)
+- **Abenezer E.** - [Abenezer-Baheru](https://github.com/Abenezer-Baheru)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-This `README.md` provides an overview of the project, setup instructions, usage guidelines, and testing information. It also includes sections for authors, license, and acknowledgments. You can customize it further based on your project's specific details and requirements.
+```
