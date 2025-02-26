@@ -1,4 +1,3 @@
-```markdown
 # Brent Oil Prices Time Series Analysis
 
 This project involves the exploration and preprocessing of Brent Oil prices time series data. The primary objective is to perform Exploratory Data Analysis (EDA) and preprocessing, followed by statistical modeling and forecasting. The project is implemented using Python and various data science libraries.
@@ -146,4 +145,3 @@ python -m unittest discover tests
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
