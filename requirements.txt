@@ -4,3 +4,7 @@ matplotlib
 scikit-learn
 seaborn
 statsmodels 
+tensorflow
+pymc
+ruptures
+arch
