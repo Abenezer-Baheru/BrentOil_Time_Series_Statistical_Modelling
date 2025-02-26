@@ -8,3 +8,4 @@ tensorflow
 pymc
 ruptures
 arch
+Flask
