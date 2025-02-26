@@ -1,5 +1,3 @@
-### README.md
-
 ```markdown
 # Brent Oil Prices Time Series Analysis
 
@@ -13,6 +11,11 @@ BrentOil_Time_Series_Statistical_Modelling/
 │   ├── data/
 │   │   ├── BrentOilPrices.csv
 │   │   ├── BrentOilPrices_cleaned.csv
+├── app/
+│   ├── app.py
+├── dashboard/
+│   ├── public
+│   ├── src
 ├── scripts/
 │   ├── EDA_and_Preprocessing.py
 │   ├── test_EDA_and_Preprocessing.py
@@ -41,6 +44,11 @@ Ensure you have the following libraries installed:
 - statsmodels
 - warnings
 - logging
+- tensorflow
+- pymc
+- ruptures
+- arch
+- Flask
 
 You can install the required libraries using the following command:
 
@@ -90,10 +98,46 @@ python -m unittest discover tests
 
 - `src/data/BrentOilPrices.csv`: The raw dataset containing Brent Oil prices.
 - `src/data/BrentOilPrices_cleaned.csv`: The cleaned dataset after preprocessing.
+- `app/app.py`: The Flask backend application.
+- `dashboard/`: The React frontend application.
 - `scripts/EDA_and_Preprocessing.py`: The script containing the `EDA_and_Preprocessing` class.
 - `tests/test_EDA_and_Preprocessing.py`: The script containing unit tests for the `EDA_and_Preprocessing` class.
 - `notebooks/EDA_and_Preprocessing.ipynb`: The Jupyter notebook for EDA and preprocessing.
 - `README.md`: The project documentation.
+
+## Model Evaluation and Comparison
+
+### ARIMA and GARCH Model
+
+### VAR Model
+
+1. **Training**: Fit a VAR model using differenced data.
+2. **Evaluation**: Calculate RMSE and MAE for the VAR model predictions.
+
+### LSTM Model
+
+1. **Training**: Prepare data and fit an LSTM model.
+2. **Evaluation**: Calculate RMSE and MAE for the LSTM model predictions.
+
+## Developing an Interactive Dashboard for Data Analysis Results
+
+### Backend (Flask)
+
+1. **Create the Flask App**: Define your Flask application in `app/app.py`.
+
+### Frontend (React)
+
+1. **Create the React App**: Set up your React application.
+2. **Install Dependencies**: Install necessary dependencies.
+3. **Fetch Data and Display Visualizations**:
+4. **Proxy Setup**: Add proxy in `package.json`.
+
+### Key Features
+
+- Present historical trends, forecasts, and correlations with events.
+- Allow users to see how specific events influenced Brent oil prices.
+- Enable users to filter data, select date ranges, and drill down into details for deeper insights.
+- Display key indicators like volatility, average price changes, and model accuracy metrics (e.g., RMSE, MAE).
 
 ## Author
 
